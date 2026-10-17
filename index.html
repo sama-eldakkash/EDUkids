@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EduKids is a playful space where little ones explore letters and animal friends in Arabic and English."
+    />
+    <meta name="theme-color" content="#FFF9EF" />
+    <title>EduKids</title>
+    <script>
+      try {
+        if (localStorage.getItem("edukids-lang") === "ar") {
+          document.documentElement.lang = "ar"
+          document.documentElement.dir = "rtl"
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
